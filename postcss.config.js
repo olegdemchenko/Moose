@@ -5,8 +5,8 @@ const CssMqPacker = require('css-mqpacker');
 
 module.exports = {
   plugins: [
-  //  Autoprefixer(),
-  //  CssNano(),
+    Autoprefixer(),
+    CssNano(),
     CssMqPacker(),
   ]
 }

@@ -27,6 +27,30 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(ttf|otf)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/'
+          }
+        }],
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'img/'
+          }
+        }],
+      },
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       }
