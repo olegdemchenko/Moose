@@ -1,0 +1,18 @@
+.about {
+  height: 600px;
+  padding-top: 235px;
+  background-image: url("/img/about.png");
+}
+
+.button {
+  border: none;
+  padding: 14px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: $orange;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+  font-family: "Roboto Condensed", serif;
+  color: $ff;
+  text-transform: uppercase;
+}

@@ -55,13 +55,11 @@ header {
 }
 
 .navigation-list {
-  padding-left: 0;
-  margin: 0;
-  list-style-type: none;
-
   &__item {
+    height: 100%;
     position: relative;
     padding: 13px 30px;
+    vertical-align: middle;
     font-family: "Roboto Condensed", serif;
     font-size: 15px;
     line-height: 26px;
@@ -79,7 +77,7 @@ header {
       box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11), inset 0 1px 0 rgba(0, 0, 0, 0.07);
     }
 
-    &:last-child {
+    &_last {
       &::after {
         position: absolute;
         content: "";
