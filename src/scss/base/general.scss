@@ -33,8 +33,12 @@ ul {
   align-items: center;
 }
 
-.justify-content_space-between {
+.justify-content_space_between {
   justify-content: space-between;
+}
+
+.justify-content_space_around {
+  justify-content: space-around;
 }
 
 .justify-content_start {
@@ -63,16 +67,6 @@ ul {
     font-size: 30px;
     font-weight: 700;
     line-height: 26px;
-
-    &_background-white {
-      background-color: white;
-      padding: 15px 15px 10px 15px;
-    }
-
-    &_size-smaller {
-      font-size: 22px;
-      padding: 10px 15px 10px 15px;
-    }
   }
 }
 
@@ -84,15 +78,6 @@ ul {
   color: $sixtyOne;
 }
 
-.button {
-  border: none;
-  padding: 14px 20px;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: 700;
-  background-color: $orange;
-  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
-  font-family: "Roboto Condensed", serif;
-  color: $ff;
-  text-transform: uppercase;
+.padding_70 {
+  padding: 70px 0;
 }

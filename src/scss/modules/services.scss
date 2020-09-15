@@ -1,0 +1,101 @@
+.services {
+  &__text {
+    width: 780px;
+    padding: 5px 0 45px 0;
+    font-size: 18px;
+    line-height: 32px;
+    color: #616161;
+    text-align: center;
+    font-family: "Roboto Slab Thin", serif;
+  }
+}
+
+.services-list {
+  width: 780px;
+}
+
+.service-item {
+  text-align: center;
+  color: #bbb;
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 5px auto 18px auto;
+    border: 2px solid #bbb;
+    border-radius: 50%;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Glyphter", serif;
+    }
+
+    &_design {
+      &::after {
+        content: "C";
+        font-size: 32px;
+        line-height: 20px;
+      }
+    }
+
+    &_graphic {
+      &::after {
+        content: "D";
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+
+    &_photo {
+      &::after {
+        content: "E";
+        font-size: 28px;
+        line-height: 21px;
+      }
+    }
+
+    &_illustration {
+      &::after {
+        content: "F";
+        font-size: 32px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  &_active {
+    color: $orange;
+
+    .service-item__logo {
+      border-color: $orange;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -8px;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+        border-top: 2.5px solid $orange;
+        border-left: 2.5px solid $orange;
+        border-radius: 3px;
+        background-color: white;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__caption {
+    height: 12px;
+    font-size: 15px;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

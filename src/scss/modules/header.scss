@@ -57,9 +57,9 @@ header {
 .navigation-list {
   &__item {
     height: 100%;
+    display: inline-block;
     position: relative;
     padding: 13px 30px;
-    vertical-align: middle;
     font-family: "Roboto Condensed", serif;
     font-size: 15px;
     line-height: 26px;

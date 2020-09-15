@@ -2,6 +2,20 @@
   height: 600px;
   padding-top: 235px;
   background-image: url("/img/about.png");
+
+  &__text {
+    padding-bottom: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    color: $c5;
+  }
+}
+
+.background-white {
+  padding: 15px 15px 10px 15px;
+  background-color: white;
 }
 
 .button {
