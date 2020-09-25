@@ -25,6 +25,10 @@ ul {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .direction_column {
   flex-direction: column;
 }
@@ -54,19 +58,49 @@ ul {
   margin: auto;
 }
 
+.wrapper {
+  padding: 70px 0;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11), inset 0 1px 0 rgba(0, 0, 0, 0.07);
+}
+
 .link {
   text-decoration: none;
+  color: black;
 }
 
 .title {
   padding: 0 0 20px 0;
 
   &__text {
+    display: inline-block;
     font-family: "Roboto Slab", serif;
     color: $c5;
     font-size: 30px;
     font-weight: 700;
     line-height: 26px;
+
+    &_size_small {
+      font-size: 16px;
+      font-family: "Roboto Condensed", serif;
+      text-transform: uppercase;
+    }
+
+    &_border_right {
+      position: relative;
+      padding-right: 25px;
+      margin-right: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 14px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: $orange;
+      }
+    }
   }
 }
 
@@ -78,6 +112,14 @@ ul {
   color: $sixtyOne;
 }
 
-.padding_70 {
-  padding: 70px 0;
+.description {
+  font-size: 18px;
+  line-height: 32px;
+  color: #616161;
+  text-align: center;
+  font-family: "Roboto Slab Thin", serif;
+
+  &_text_lightgray {
+    color: $lightgray;
+  }
 }

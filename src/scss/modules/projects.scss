@@ -1,0 +1,56 @@
+$img-width: 320px;
+$portfolio-gap: 10px;
+
+.projects-filter {
+  padding: 50px 0 30px 0;
+
+  &__checkbox {
+    width: 0;
+    height: 0;
+  }
+
+  &__label {
+    position: relative;
+    padding: 0 30px 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', serif;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $c5;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      transform: translateY(-50%);
+      border: 1px solid $c5;
+      border-radius: 50%;
+    }
+  }
+
+  &__checkbox:checked + &__label {
+    color: $orange;
+
+    &::before {
+      border: 1px solid $orange;
+    }
+  }
+}
+
+.portfolio {
+  width: 4 * $img-width + 3 * $portfolio-gap;
+  margin: auto;
+
+  &__elem {
+    width: $img-width;
+    margin: 0 $portfolio-gap $portfolio-gap 0;
+
+    &:nth-child(4n + 4) {
+      margin: 0 0 $portfolio-gap 0;
+    }
+  }
+}

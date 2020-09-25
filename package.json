@@ -50,5 +50,8 @@
     "last 2 versions, not dead",
     "> 5%"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "bxslider": "^4.2.14",
+    "jquery": "^3.5.1"
+  }
 }
