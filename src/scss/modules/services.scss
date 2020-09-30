@@ -1,12 +1,11 @@
 .services {
+  &-list {
+    width: 780px;
+  }
   &__text {
     width: 780px;
     padding: 5px 0 45px 0;
   }
-}
-
-.services-list {
-  width: 780px;
 }
 
 .service-item {

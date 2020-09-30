@@ -1,3 +1,4 @@
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "~@csstools/normalize.css";
 @import "./base/variables.scss";
 @import "./base/fonts.scss";
@@ -6,3 +7,4 @@
 @import "./modules/about.scss";
 @import "./modules/services.scss";
 @import "./modules/projects.scss";
+@import "./modules/blog.scss";

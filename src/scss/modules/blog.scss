@@ -1,0 +1,70 @@
+.blog {
+  &__title {
+    font-family: "Roboto Condensed", serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+  &__description {
+    width: 700px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $f7;
+  }
+}
+
+.glide {
+  width: 1400px;
+
+  &__bullets {
+    padding: 30px 0 0 0;
+    text-align: center;
+  }
+
+  &__bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    border: 1px solid $aaa;
+    background-color: $ff;
+
+    &--active {
+      border: 1px solid $orange;
+    }
+  }
+}
+
+.slide {
+  border: 1px solid $e9;
+
+  &__screen {
+    width: 100%;
+  }
+
+  &__caption {
+    padding: 25px 0;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    padding: 0 0 15px 0;
+    font-family: "Roboto Condensed", serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: $sixtyOne;
+  }
+
+  &__info {
+    font-family: "Roboto Condensed", serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    color: $f9;
+  }
+}

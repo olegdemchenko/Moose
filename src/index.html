@@ -8,7 +8,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="company-info flex justify-content_space_between align-items_center">
+      <div class="company-info content_space-between">
         <div class="logo">
           <a class="link" href="#"><span class="logo__title">Moose</span></a>
         </div>
@@ -18,21 +18,21 @@
         </div>
       </div>
     </div>
-    <div class="menu ">
-      <div class="container flex justify-content_space_between align-items_center">
+    <div class="menu">
+      <div class="container content_space-between">
         <nav class="navigation">
-          <ul class="navigation-list flex">
-            <a href="" class="link"><li class="navigation-list__item flex align-items_center">Home</li></a>
-            <a href="" class="link"><li class="navigation-list__item flex align-items_center">Portfolio</li></a>
-            <a href="" class="link"><li class="navigation-list__item flex align-items_center">About</li></a>
-            <a href="" class="link"><li class="navigation-list__item flex align-items_center">Service</li></a>
-            <a href="" class="link"><li class="navigation-list__item flex align-items_center">Journal</li></a>
-            <a href="" class="link"><li class="navigation-list__item flex align-items_center">Features</li></a>
-            <a href="" class="link"><li class="navigation-list__item navigation-list__item_last flex align-items_center">Contact</li></a>
+          <ul class="navigation-list">
+            <a href="" class="link"><li class="navigation-list__item">Home</li></a>
+            <a href="" class="link"><li class="navigation-list__item">Portfolio</li></a>
+            <a href="" class="link"><li class="navigation-list__item">About</li></a>
+            <a href="" class="link"><li class="navigation-list__item">Service</li></a>
+            <a href="" class="link"><li class="navigation-list__item">Journal</li></a>
+            <a href="" class="link"><li class="navigation-list__item">Features</li></a>
+            <a href="" class="link"><li class="navigation-list__item navigation-list__item_last">Contact</li></a>
           </ul>
         </nav>
         <div class="social">
-          <ul class="social-list flex justify-content_start">
+          <ul class="social-list">
             <a href="" class="link"><li class="social-list__item social-list__item_rss"></li></a>
             <a href="" class="link"><li class="social-list__item social-list__item_facebook"></li></a>
             <a href="" class="link"><li class="social-list__item social-list__item_twitter"></li></a>
@@ -43,22 +43,22 @@
       </div>
     </div>
   </header>
-  <section class="about flex direction_column align-items_center">
+  <section class="about content_center">
     <div class="title">
       <h3 class="title__text background-white">Moose brings awesomeness</h3>
-    </div>
+    </div>  
     <div class="about__text">
       <p class="background-white">A responsive template with clean and professional design</p>
     </div>
     <button class="button" type="submit">See project</button>
   </section>
   <main>
-    <section class="services wrapper flex direction_column align-items_center">
+    <section class="services wrapper content_center">
       <div class="title">
         <h3 class="title__text"><span class="text_color_orange">Creativity</span> is important for us</h3>
       </div>
       <p class="services__text description">Nullam id dolor id nibh ulticies vehicula ut id elit. Maescenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula eget lacinia odio nec elit.</p>
-      <div class="services-list flex justify-content_space_around">
+      <div class="services-list content_space-around">
         <div class="service-item service-item_active">
           <div class="service-item__logo service-item__logo_design"></div>
           <span class="service-item__caption">Interface design</span>
@@ -77,10 +77,10 @@
         </div>
       </div>
     </section>
-    <section class="projects wrapper flex direction_column align-items_center">
-      <div class="title">
-        <h5 class="title__text title__text_size_small title__text_border_right text_color_orange">Latest projects</h5>
-        <span class="description description_text_lightgray">making stuff is awesome</span>
+    <section class="projects wrapper content_center">
+      <div class="text_border_right">
+        <p class="projects__title text_color_orange">Latest projects</h5>
+        <p class="projects__description">making stuff is awesome</span>
       </div>
       <form action="" class="projects-filter">
         <input class="projects-filter__checkbox" type="checkbox" name="all" id="check_all">
@@ -96,7 +96,7 @@
         <input class="projects-filter__checkbox" type="checkbox" name="audio" id="check_audio">
         <label class="projects-filter__label" for="check_audio">Audio</label>
       </form>
-      <div class="portfolio flex wrap">
+      <div class="portfolio">
         <a href="" class="link portfolio__elem"><img src="img/projects_1.png" alt="" class=""></a>
         <a href="" class="link portfolio__elem"><img src="img/projects_2.png" alt="" class=""></a>
         <a href="" class="link portfolio__elem"><img src="img/projects_3.png" alt="" class=""></a>
@@ -109,6 +109,70 @@
         <a href="" class="link portfolio__elem"><img src="img/projects_10.png" alt="" class=""></a>
         <a href="" class="link portfolio__elem"><img src="img/projects_11.png" alt="" class=""></a>
         <a href="" class="link portfolio__elem"><img src="img/projects_12.png" alt="" class=""></a>
+      </div>
+    </section>
+    <section class="blog wrapper content_center">
+      <h5 class="blog__title text_color_orange">Our latest blog</h5>
+      <p class="blog__description">Morbi leo risus, porta ac consectecur ac, vestibulum at eros. Cum sociis natoque penabitus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus facilisis egestas eget quam.</p>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <div class="glide__slide">
+              <figure class="slide">
+                <img src="img/posts1.png" alt="" class='slide__screen'>
+                <figcaption class="slide__caption content_center">
+                  <h5 class="slide__name">Tortor ullacorper fringilla euismod</h5>
+                  <div class="slide__info text_border_right">
+                    <p>21 may 2013</p>
+                    <p>Macro, photography</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="glide__slide">
+              <figure class="slide">
+                <img src="img/posts2.png" alt="" class='slide__screen'>
+                <figcaption class="slide__caption content_center">
+                  <h5 class="slide__name">Tortor ullacorper fringilla euismod</h5>
+                  <div class="slide__info text_border_right">
+                    <p>21 may 2013</p>
+                    <p>Macro, photography</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="glide__slide">
+              <figure class="slide">
+                <img src="img/posts3.png" alt="" class='slide__screen'>
+                <figcaption class="slide__caption content_center">
+                  <h5 class="slide__name">Tortor ullacorper fringilla euismod</h5>
+                  <div class="slide__info text_border_right">
+                    <p>21 may 2013</p>
+                    <p>Macro, photography</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="glide__slide">
+              <figure class="slide">
+                <img src="img/posts4.png" alt="" class='slide__screen'>
+                <figcaption class="slide__caption content_center">
+                  <h5 class="slide__name">Tortor ullacorper fringilla euismod</h5>
+                  <div class="slide__info text_border_right">
+                    <p>21 may 2013</p>
+                    <p>Macro, photography</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+        </div>
       </div>
     </section>
   </main>

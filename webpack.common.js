@@ -7,7 +7,8 @@ const StylelintWebpackPlugin = require('stylelint-webpack-plugin');
 
 const paths = {
   src: path.join(__dirname, '/src'),
-  dist: path.join(__dirname, '/dist')
+  dist: path.join(__dirname, '/dist'),
+  node_modules: path.join(__dirname, '/node_modules'),
 }
 
 module.exports = {
@@ -22,6 +23,7 @@ module.exports = {
   resolve: {
     alias: {
       '~': paths.src,
+      'Node_modules': paths.node_modules,
     }
   },
   module: {
