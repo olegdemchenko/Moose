@@ -1,0 +1,49 @@
+.footer {
+  color: $ca;
+}
+.information {
+  background-color: $darkGrey;
+  &__header {
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  &__text {
+    max-width: 255px;
+  }
+  &__paragraph {
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 2em;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &_no-padding {
+      padding-bottom: 0;
+    }
+  }
+  &__date {
+    font-family: "Roboto Slab",serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 2em;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+.copyright {
+  padding: 35px 0 30px 0;
+  background-color: $d2;
+  &__text {
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

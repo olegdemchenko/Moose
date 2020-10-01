@@ -29,24 +29,24 @@ figure {
   display: flex;
 }
 
-@mixin flexible($direction, $justify-content, $align-items) {
-  display: flex;
-  flex-direction: $direction;
+.flex-direction_column {
+  flex-direction: column;
+}
+
+.flex_wrap {
   flex-wrap: wrap;
-  justify-content: $justify-content;
-  align-items: $align-items;
 }
 
-.content_center {
-  @include flexible(column, flex-start, center);
+.justify-content_between {
+  justify-content: space-between;
 }
 
-.content_space-between {
-  @include flexible(row, space-between, center);
+.justify-content_around {
+  justify-content: space-around;
 }
 
-.content_space-around {
-  @include flexible(row, space-around, center);
+.align-items_center {
+  align-items: center;
 }
 
 .container {
@@ -57,7 +57,12 @@ figure {
 .wrapper {
   padding: 70px 0;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11), inset 0 1px 0 rgba(0, 0, 0, 0.07);
+  &_no-border {
+    box-shadow: none;
+  }
 }
+
+
 
 .link {
   text-decoration: none;
@@ -112,14 +117,3 @@ figure {
   }
 }
 
-.description {
-  font-size: 18px;
-  line-height: 32px;
-  color: #616161;
-  text-align: center;
-  font-family: "Roboto Slab Thin", serif;
-
-  &_text_lightgray {
-    color: $lightgray;
-  }
-}

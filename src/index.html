@@ -8,7 +8,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="company-info content_space-between">
+      <div class="company-info flex justify-content_between align-items_center">
         <div class="logo">
           <a class="link" href="#"><span class="logo__title">Moose</span></a>
         </div>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="menu">
-      <div class="container content_space-between">
+      <div class="container flex justify-content_between align-items_center">
         <nav class="navigation">
           <ul class="navigation-list">
             <a href="" class="link"><li class="navigation-list__item">Home</li></a>
@@ -43,7 +43,7 @@
       </div>
     </div>
   </header>
-  <section class="about content_center">
+  <section class="about flex flex-direction_column align-items_center">
     <div class="title">
       <h3 class="title__text background-white">Moose brings awesomeness</h3>
     </div>  
@@ -53,12 +53,12 @@
     <button class="button" type="submit">See project</button>
   </section>
   <main>
-    <section class="services wrapper content_center">
+    <section class="services wrapper flex flex-direction_column align-items_center">
       <div class="title">
         <h3 class="title__text"><span class="text_color_orange">Creativity</span> is important for us</h3>
       </div>
-      <p class="services__text description">Nullam id dolor id nibh ulticies vehicula ut id elit. Maescenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula eget lacinia odio nec elit.</p>
-      <div class="services-list content_space-around">
+      <p class="services__text">Nullam id dolor id nibh ulticies vehicula ut id elit. Maescenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula eget lacinia odio nec elit.</p>
+      <div class="services-list flex justify-content_around">
         <div class="service-item service-item_active">
           <div class="service-item__logo service-item__logo_design"></div>
           <span class="service-item__caption">Interface design</span>
@@ -77,7 +77,7 @@
         </div>
       </div>
     </section>
-    <section class="projects wrapper content_center">
+    <section class="projects wrapper flex flex-direction_column align-items_center">
       <div class="text_border_right">
         <p class="projects__title text_color_orange">Latest projects</h5>
         <p class="projects__description">making stuff is awesome</span>
@@ -111,7 +111,7 @@
         <a href="" class="link portfolio__elem"><img src="img/projects_12.png" alt="" class=""></a>
       </div>
     </section>
-    <section class="blog wrapper content_center">
+    <section class="blog wrapper flex flex-direction_column align-items_center">
       <h5 class="blog__title text_color_orange">Our latest blog</h5>
       <p class="blog__description">Morbi leo risus, porta ac consectecur ac, vestibulum at eros. Cum sociis natoque penabitus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus facilisis egestas eget quam.</p>
       <div class="glide">
@@ -120,7 +120,7 @@
             <div class="glide__slide">
               <figure class="slide">
                 <img src="img/posts1.png" alt="" class='slide__screen'>
-                <figcaption class="slide__caption content_center">
+                <figcaption class="slide__caption flex flex-direction_column align-items_center">
                   <h5 class="slide__name">Tortor ullacorper fringilla euismod</h5>
                   <div class="slide__info text_border_right">
                     <p>21 may 2013</p>
@@ -132,7 +132,7 @@
             <div class="glide__slide">
               <figure class="slide">
                 <img src="img/posts2.png" alt="" class='slide__screen'>
-                <figcaption class="slide__caption content_center">
+                <figcaption class="slide__caption flex flex-direction_column align-items_center">
                   <h5 class="slide__name">Tortor ullacorper fringilla euismod</h5>
                   <div class="slide__info text_border_right">
                     <p>21 may 2013</p>
@@ -144,7 +144,7 @@
             <div class="glide__slide">
               <figure class="slide">
                 <img src="img/posts3.png" alt="" class='slide__screen'>
-                <figcaption class="slide__caption content_center">
+                <figcaption class="slide__caption flex flex-direction_column align-items_center">
                   <h5 class="slide__name">Tortor ullacorper fringilla euismod</h5>
                   <div class="slide__info text_border_right">
                     <p>21 may 2013</p>
@@ -156,7 +156,7 @@
             <div class="glide__slide">
               <figure class="slide">
                 <img src="img/posts4.png" alt="" class='slide__screen'>
-                <figcaption class="slide__caption content_center">
+                <figcaption class="slide__caption flex flex-direction_column align-items_center">
                   <h5 class="slide__name">Tortor ullacorper fringilla euismod</h5>
                   <div class="slide__info text_border_right">
                     <p>21 may 2013</p>
@@ -176,5 +176,46 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="wrapper wrapper_no-border information">
+      <div class="container flex justify-content_between">
+        <div class="information__text">
+          <h5 class="information__header">Get in touch</h5>
+          <p class="information__paragraph">Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna</p>
+          <div class="information__paragraph">
+            <p>Moonshine Street No: 14/05</p>
+            <p>Light City, Jupiter</p>
+            <p>0247 541 65 87</p>
+            <p>support@longwave.com</p>
+          </div>
+        </div>
+        <div class="information__text">
+          <h5 class="information__header">Twitter</h5>
+          <p class="information__paragraph">Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+          <p class="information__paragraph">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
+          <p class="information__paragraph">Vestibulum id ligula porta euismod semper. Maescenas faucibus mollis.</p>
+        </div>
+        <div class="information__text">
+          <h5 class="information__header">Popular posts</h5>
+          <p class="information__paragraph information__paragraph_no-padding">Vivamus sagitis lacus vel augue laoreet rutrum dolor auctor.</p>
+          <p class="information__date">14 Nov, 2012</span>
+          <p class="information__paragraph information__paragraph_no-padding">Scelerisque nisl consectetur et.</p>
+          <p class="information__date">22 May, 2012</p>
+          <p class="information__paragraph information__paragraph_no-padding">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+          <p class="information__date">15 Jul, 2012</p>
+        </div>
+        <div class="information__text">
+          <h5 class="information__header">About us</h5>
+          <p class="information__paragraph">Vestibulum id ligula porta euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          <p class="information__paragraph">Cum sociis natoque penabitus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit temptus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <p class="copyright__text">&copy 2013 Marble. All rights reserved. Theme by elemis.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
