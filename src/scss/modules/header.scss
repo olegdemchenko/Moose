@@ -20,7 +20,7 @@ header {
   &__tel-number,
   &__email {
     position: relative;
-    padding-left: 50px;
+    margin-left: 50px;
     font-family: "Roboto", serif;
     font-size: 12px;
     line-height: 26px;
@@ -28,13 +28,19 @@ header {
 
     &::before {
       position: absolute;
+      width: 10px;
+      height: 14px;
       top: 0;
-      left: 30px;
+      left: -20px;
+      right: 0;
+      bottom: 0;
+      margin: auto 0;
       font-family: "Glyphter", serif;
       font-size: 14px;
       line-height: 14px;
       color: $grey88;
     }
+
   }
 
   &__tel-number {
@@ -55,9 +61,26 @@ header {
 }
 
 .navigation-list {
+  position: relative;
+  font-size: 0;
+  &::before {
+    position: absolute;
+    display:none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto 0;
+    width: 22px;
+    height: 26px;
+    content: '\f0c9';
+    font-family: 'Fontello',serif;
+    color: $grey66;
+    font-size: 26px;
+  }
   &__item {
+    max-width: 150px;
     height: 100%;
-    display: inline-block;
     position: relative;
     padding: 13px 30px;
     font-family: "Roboto Condensed", serif;
@@ -74,7 +97,7 @@ header {
       left: 0;
       bottom: 0;
       width: 1px;
-      box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11), inset 0 1px 0 rgba(0, 0, 0, 0.07);
+      box-shadow:  inset 1px 0 0 rgba(0, 0, 0, 0.07);
     }
 
     &_last {
@@ -87,6 +110,11 @@ header {
         width: 1px;
         box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11), inset 0 1px 0 rgba(0, 0, 0, 0.07);
       }
+    }
+    &:hover {
+      background-color: $ca;
+      color: $ff;
+      text-decoration: underline;
     }
   }
 }
@@ -145,5 +173,60 @@ header {
         content: "\e801";
       }
     }
+
+    &:hover {
+      background-color: $ca;
+      &::after {
+        color: $ff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1210px) {
+  .navigation-list {
+    width: 62px;
+    height: 52px;
+    &::before {
+      display: block;
+    }
+    &__box {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 62px;
+      width: 150px;
+      z-index: 1;
+    }
+    &__item {
+      background-color: $fb;
+      box-shadow: 0.5px 1px 0 rgba(0, 0, 0, 0.11), inset 1px 1px 0 rgba(0, 0, 0, 0.07);
+      &::before {
+        width: 0;
+      }
+    }
+    $current: &;
+    &:hover {
+      #{$current}__box {
+        display: flex;
+        flex-direction:column;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-list {
+    &__box {
+      left: 42px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

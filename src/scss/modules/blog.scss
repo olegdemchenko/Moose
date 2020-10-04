@@ -1,3 +1,5 @@
+$slide-width: 450px;
+$slide-gap: 25px;
 .blog {
   &__title {
     font-family: "Roboto Condensed", serif;
@@ -7,7 +9,7 @@
     padding-bottom: 30px;
   }
   &__description {
-    width: 700px;
+    max-width: 700px;
     padding-bottom: 50px;
     text-align: center;
     font-family: 'Roboto', serif;
@@ -19,8 +21,7 @@
 }
 
 .glide {
-  width: 1400px;
-
+  max-width: 3 * $slide-width + 2 * $slide-gap;
   &__bullets {
     padding: 30px 0 0 0;
     text-align: center;
@@ -42,17 +43,18 @@
 
 .slide {
   border: 1px solid $e9;
-
+  max-width: $slide-width;
   &__screen {
     width: 100%;
   }
-
   &__caption {
     padding: 25px 0;
+    text-align: center;
     text-transform: uppercase;
   }
 
   &__name {
+    max-width: 75%;
     padding: 0 0 15px 0;
     font-family: "Roboto Condensed", serif;
     font-size: 18px;
@@ -66,5 +68,33 @@
     font-weight: 700;
     line-height: 15px;
     color: $f9;
+  }
+}
+@media (max-width: 950px) {
+  .blog {
+    &__description {
+      width: 75vw;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .glide {
+    max-width: 2 * $slide-width + $slide-gap;
+  }
+}
+
+@media (max-width: 960px) {
+  .glide {
+    max-width: $slide-width;
+  }
+}
+
+@media (max-width: 500px) {
+  .glide {
+    max-width: 80vw;
+  }
+  .slide {
+    max-width: 80vw;
   }
 }

@@ -27,42 +27,38 @@ figure {
 
 .flex {
   display: flex;
-}
-
-.flex-direction_column {
-  flex-direction: column;
-}
-
-.flex_wrap {
-  flex-wrap: wrap;
-}
-
-.justify-content_between {
-  justify-content: space-between;
-}
-
-.justify-content_around {
-  justify-content: space-around;
-}
-
-.align-items_center {
-  align-items: center;
+  &_direction_column {
+    flex-direction: column;
+  }
+  &_wrap {
+    flex-wrap: wrap;
+  }
+  &_justify-content_center {
+    justify-content: center;
+  }
+  &_justify-content_between {
+    justify-content: space-between;
+  }
+  &_justify-content_around {
+    justify-content: space-around;
+  }
+  &_align-items_center {
+    align-items: center;
+  }
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
+}
+.content_centered {
+  text-align: center;
 }
 
 .wrapper {
   padding: 70px 0;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11), inset 0 1px 0 rgba(0, 0, 0, 0.07);
-  &_no-border {
-    box-shadow: none;
-  }
 }
-
-
 
 .link {
   text-decoration: none;
@@ -71,7 +67,7 @@ figure {
 
 .title {
   padding: 0 0 20px 0;
-
+  text-align: center;
   &__text {
     display: inline-block;
     font-family: "Roboto Slab", serif;
@@ -90,12 +86,12 @@ figure {
   color: $sixtyOne;
 }
 
-.text_border_right {
-  & > p {
+.separated-text {
+  font-size: 0;
+  & > * {
     position: relative;
     display: inline-block;
-    padding-right: 0.5em;
-
+    padding-right: 0.9em;
     &::after {
       position: absolute;
       content: '|';
@@ -108,7 +104,7 @@ figure {
 
     &:last-child {
       padding-right: 0;
-      padding-left: 0.5em;
+      padding-left: 0.9em;
 
       &::after {
         content: '';
@@ -117,3 +113,48 @@ figure {
   }
 }
 
+@media (max-width: 1210px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .title {
+    width: 75vw;
+  }
+  .wrapper {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .separated-text {
+    &_adaptive {
+      max-width: 150px;
+      text-align:center;
+      & > * {
+        padding-right: 0;
+        &::after {
+          content: '';
+          top: 100%;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          transform: none;
+          background-color: $orange;
+        }
+        &:last-child {
+          padding: 0;
+          &::after {
+            display:none;
+          }
+        }
+      }
+    }
+  }
+}

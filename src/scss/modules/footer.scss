@@ -3,8 +3,9 @@
 }
 .information {
   background-color: $darkGrey;
+  padding: 0 0 70px 0;
   &__header {
-    padding-bottom: 15px;
+    padding: 70px 0 15px 0;
     font-size: 16px;
     font-family: "Roboto Condensed", serif;
     font-weight: 700;
@@ -45,5 +46,14 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .information {
+    padding: 0 0 30px 0;
+    &__header {
+      padding: 30px 0 15px 0;
+    } 
   }
 }

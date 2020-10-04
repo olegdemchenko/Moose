@@ -1,19 +1,21 @@
 .services {
   &-list {
-    width: 780px;
+    width: 875px;
   }
   &__text {
-    width: 780px;
-    padding: 5px 0 45px 0;
+    max-width: 875px;
+    padding: 0 0 45px 0;
     font-size: 18px;
+    font-weight: 200;
     line-height: 32px;
     color: #616161;
     text-align: center;
-    font-family: "Roboto Slab Thin", serif;
+    font-family: "Roboto Slab Light", serif;
   }
 }
 
 .service-item {
+  max-width: 120px;
   text-align: center;
   color: #bbb;
 
@@ -96,5 +98,20 @@
     font-family: "Roboto Condensed", serif;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 950px) {
+  .services {
+    &-list {
+      width: 60vw;
+    }
+    &__text {
+      max-width: 75vw;
+    }
+  }
+  .service-item {
+    max-width: 170px;
+    padding: 25px;
   }
 }

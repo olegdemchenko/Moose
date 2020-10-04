@@ -5,5 +5,13 @@ export default () => {
     startAt: 0,
     gap: 25,
     perView: 3,
+    breakpoints: {
+      1440: {
+        perView: 2,
+      },
+      960: {
+        perView: 1,
+      }
+    }
   }).mount();
 };

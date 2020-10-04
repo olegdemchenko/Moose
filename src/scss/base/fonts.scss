@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Fontello';
+  src: url("/fonts/fontello.ttf");
+}
+
+@font-face {
   font-family: "Roboto Condensed";
   src: url("/fonts/RobotoCondensed-Bold.ttf");
 }
@@ -29,6 +34,6 @@
 }
 
 @font-face {
-  font-family: "Roboto Slab Thin";
-  src: url("/fonts/RobotSlab-Thin.ttf");
+  font-family: "Roboto Slab Light";
+  src: url("/fonts/RobotoSlab-Light.ttf");
 }

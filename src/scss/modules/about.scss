@@ -1,7 +1,10 @@
 .about {
   height: 600px;
-  padding-top: 235px;
+  padding: 235px 0 0 0;
   background-image: url("/img/about.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
   &__text {
     padding-bottom: 20px;
     font-size: 22px;
@@ -9,6 +12,7 @@
     font-weight: 700;
     font-family: "Roboto Slab", serif;
     color: $c5;
+    text-align:center;
   }
 }
 
@@ -28,4 +32,19 @@
   font-family: "Roboto Condensed", serif;
   color: $ff;
   text-transform: uppercase;
+}
+
+@media (max-width: 1440px) {
+  .about {
+    height: 41vw;
+    min-height: 400px;
+    padding: 14vw 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    &__text {
+      width: 75vw;
+    }
+  }
 }
